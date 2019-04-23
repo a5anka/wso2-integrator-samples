@@ -11,6 +11,7 @@
         <outSequence/>
         <faultSequence/>
     </target>
+    <parameter name="transport.vfs.Streaming">true</parameter>
     <parameter name="transport.PollInterval">5</parameter>
     <parameter name="transport.vfs.FileURI">file:///tmp/smooks-sample/csv/in</parameter>
     <parameter name="transport.vfs.ContentType">text/plain</parameter>

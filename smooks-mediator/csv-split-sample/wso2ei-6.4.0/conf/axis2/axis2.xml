@@ -175,6 +175,9 @@
         <!--JSON Message Formatters-->
         <messageFormatter contentType="application/json"
                           class="org.wso2.carbon.integrator.core.json.JsonStreamFormatter"/>
+	<messageFormatter contentType="application/binary" 
+		          class="org.apache.axis2.format.BinaryFormatter"/>
+
         <!--messageFormatter contentType="application/x-www-form-urlencoded"
                         class="org.wso2.carbon.relay.ExpandingMessageFormatter"/-->
         <!--messageFormatter contentType="multipart/form-data"
@@ -213,6 +216,8 @@
                         class="org.apache.axis2.format.PlainTextBuilder"/>
         <messageBuilder contentType="application/octet-stream"
                         class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
+        <messageBuilder contentType="application/binary" class="org.apache.axis2.format.BinaryBuilder"/>
+
         <!--JSON Message Builders-->
         <messageBuilder contentType="application/json"
                         class="org.wso2.carbon.integrator.core.json.JsonStreamBuilder"/>
